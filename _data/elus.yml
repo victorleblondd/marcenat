@@ -1,0 +1,40 @@
+# Conseil municipal : maire et adjoints élus lors de la séance du 20 mars 2026.
+# Délégations : arrêtés du maire n° AR_010_2026, AR_011_2026 et AR_012_2026 du 25 mars 2026.
+# Permanences : avis de la mairie du 12 mai 2026.
+
+installation: "20 mars 2026"
+
+maire:
+  nom: "Philippe Vialle"
+  fonction: "Maire"
+  mandat: "Conseiller communautaire de Hautes Terres Communauté"
+  permanence: "Permanence les lundis, mardis et jeudis, de 9 h 30 à 12 h, avec ou sans rendez-vous."
+
+adjoints:
+  - nom: "Thierry Maigne"
+    fonction: "1er adjoint"
+    mandat: "Conseiller communautaire de Hautes Terres Communauté"
+    permanence: "Permanence les mercredis, de 9 h 30 à 12 h."
+    domaines: "les relations avec les autres collectivités, les services extérieurs et les prestataires, les économies d'énergie, la communication, la location des biens communaux et les travaux des bâtiments communaux"
+    domaines_court: "relations avec les collectivités, économies d'énergie, communication, biens et bâtiments communaux"
+  - nom: "Aurélie Guérin-Fournier"
+    fonction: "2e adjointe"
+    domaines: "les relations avec les organismes agricoles, les travaux ruraux, les biens de sections (estives et forêts), les affaires sociales et scolaires"
+    domaines_court: "agriculture, travaux ruraux, biens de sections, affaires sociales et scolaires"
+  - nom: "Lionel Dubois"
+    fonction: "3e adjoint"
+    domaines: "l'entretien du bourg et des hameaux, les associations, la location des gîtes communaux et des gîtes d'étape, et la mise à disposition des installations communales aux associations"
+    domaines_court: "entretien du bourg et des hameaux, associations, gîtes communaux"
+
+conseillers:
+  - "Jean-Paul Lemmet"
+  - "Marie-Josèphe Sabatier"
+  - "Yves Hérault"
+  - "Eric Barbat"
+  - "Luc Charbonnel"
+  - "Ingrid Moutier"
+  - "Véronique Granier"
+  - "Maud Germain"
+  - "Emilie Rispal"
+  - "Léa Monier"
+  - "Matthieu Aigueparses"

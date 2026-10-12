@@ -1,0 +1,13 @@
+# =====================================================================
+#  SÉCHERESSE : RESTRICTIONS DES USAGES DE L'EAU
+#  Encadrés de la page Infos & Alertes et rubrique « Sécheresse » de la page Vie pratique.
+#
+#  actif: true      afficher les encadrés (restrictions en cours)
+#  actif: false     les masquer (restrictions levées)
+# =====================================================================
+
+actif: true
+niveau: "crise"
+niveau_libelle: "alerte rouge (crise)"
+mise_a_jour: "2026-10-01"
+avis: "2026-10-02-alerte-secheresse-rouge-restrictions-renforcees-des-usages-de-l-eau"

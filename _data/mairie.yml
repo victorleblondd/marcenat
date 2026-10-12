@@ -1,0 +1,47 @@
+# Coordonnées et horaires de la mairie — utilisés dans l'en-tête, le pied de page et les pages.
+# Modifier ici une seule fois : tout le site se met à jour.
+
+nom: "Mairie de Marcenat"
+adresse_ligne1: "3 place de la Mairie"
+adresse_ligne2: "15190 Marcenat"
+telephone: "04 71 78 82 53"
+telephone_lien: "+33471788253"
+email: "marcenat.mairie@wanadoo.fr"
+
+# Services techniques de la commune
+technique_telephone: "06 88 89 55 46"
+technique_telephone_lien: "+33688895546"
+
+# Horaires d'ouverture du secrétariat de mairie (avis de la mairie du 12 mai 2026)
+horaires_court: "du lundi au vendredi de 8 h à 12 h, et l'après-midi les lundi, mercredi et vendredi"
+horaires:
+  - jour: Lundi
+    matin: "8 h – 12 h"
+    apres_midi: "13 h 30 – 16 h 30"
+  - jour: Mardi
+    matin: "8 h – 12 h"
+  - jour: Mercredi
+    matin: "8 h – 12 h"
+    apres_midi: "13 h 30 – 16 h 30"
+  - jour: Jeudi
+    matin: "8 h – 12 h"
+  - jour: Vendredi
+    matin: "8 h – 12 h"
+    apres_midi: "13 h 30 – 16 h 30"
+  - jour: Samedi
+    ferme: true
+  - jour: Dimanche
+    ferme: true
+
+# Agence postale communale (avis de la mairie du 18 septembre 2026)
+agence_postale:
+  adresse: "3 rue du Florac, maison des services"
+  telephone: "04 71 40 95 21"
+  telephone_lien: "+33471409521"
+  horaires_court: "du lundi au jeudi, de 9 h à 12 h"
+
+# Médiathèque et point d'accueil de Hautes Terres Tourisme (à compter du 1er octobre 2026)
+mediatheque:
+  telephone: "04 71 40 72 77"
+  telephone_lien: "+33471407277"
+  horaires_court: "du lundi au jeudi, de 14 h à 17 h 30"
