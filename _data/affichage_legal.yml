@@ -1,0 +1,203 @@
+# =====================================================================
+#  AFFICHAGE LÉGAL
+#  Le document le plus récent se place TOUT EN HAUT de la liste « documents ».
+#
+#  Ajouter un document :
+#    1. Déposer le fichier PDF dans le dossier  documents/affichage-legal/
+#       Nom conseillé : AAAA-MM-JJ-sujet-court.pdf  (sans accents ni espaces)
+#       (ou ajouter son adresse dans outils/fichiers-a-recuperer.txt : voir README.md)
+#    2. Copier le modèle ci-dessous en tête de la liste « documents », puis le remplir.
+#
+#  - date: "AAAA-MM-JJ"                date de publication (affichage)
+#    type: compte-rendu                compte-rendu, deliberation, proces-verbal,
+#                                      convocation, arrete-municipal,
+#                                      arrete-prefectoral ou divers
+#    numero: "AR_010_2026"             facultatif
+#    titre: "Objet du document"
+#    pdf: "AAAA-MM-JJ-sujet-court.pdf"  nom exact du fichier déposé
+# =====================================================================
+
+# Types de documents proposés dans le filtre (seuls les types présents s'affichent)
+types:
+  - code: compte-rendu
+    nom: "Compte rendu de séance"
+    pluriel: "Comptes rendus"
+  - code: deliberation
+    nom: "Délibérations"
+    pluriel: "Délibérations"
+  - code: proces-verbal
+    nom: "Procès-verbal"
+    pluriel: "Procès-verbaux"
+  - code: convocation
+    nom: "Convocation"
+    pluriel: "Convocations"
+  - code: arrete-municipal
+    nom: "Arrêté municipal"
+    pluriel: "Arrêtés municipaux"
+  - code: arrete-prefectoral
+    nom: "Arrêté préfectoral"
+    pluriel: "Arrêtés préfectoraux"
+  - code: divers
+    nom: "Divers"
+    pluriel: "Divers"
+
+# Années proposées dans le filtre
+annees: [2026]
+
+# Documents publiés depuis janvier 2026 (source : affichage de la mairie)
+documents:
+  - date: "2026-10-09"
+    type: compte-rendu
+    titre: "Compte rendu de la réunion du conseil municipal du 25 septembre 2026"
+    pdf: "2026-10-09-compte-rendu-cm-25-septembre-2026.pdf"
+  - date: "2026-09-28"
+    type: deliberation
+    titre: "Liste des délibérations du conseil municipal du 25 septembre 2026"
+    pdf: "2026-09-28-deliberations-cm-25-septembre-2026.pdf"
+  - date: "2026-09-28"
+    type: proces-verbal
+    titre: "Adoption du procès-verbal du conseil municipal du 7 juillet 2026"
+    pdf: "2026-09-28-adoption-pv-cm-7-juillet-2026.pdf"
+  - date: "2026-09-21"
+    type: convocation
+    titre: "Réunion du conseil municipal du 25 septembre 2026 : avis modifié (annule et remplace)"
+    pdf: "2026-09-21-convocation-cm-25-septembre-2026-modifiee.pdf"
+  - date: "2026-09-18"
+    type: convocation
+    titre: "Réunion du conseil municipal le 25 septembre 2026 à 20 h"
+    pdf: "2026-09-18-convocation-cm-25-septembre-2026.pdf"
+  - date: "2026-08-07"
+    type: arrete-municipal
+    titre: "Interdiction de stationner et déviation pour la soirée du 15 août 2026"
+    pdf: "2026-08-07-arrete-stationnement-soiree-15-aout.pdf"
+  - date: "2026-08-04"
+    type: arrete-municipal
+    titre: "Interdiction de stationner et déviation les 14 et 15 août 2026"
+    pdf: "2026-08-04-arrete-stationnement-14-15-aout.pdf"
+  - date: "2026-07-23"
+    type: compte-rendu
+    titre: "Compte rendu de la séance du conseil municipal du 7 juillet 2026"
+    pdf: "2026-07-23-compte-rendu-cm-7-juillet-2026.pdf"
+  - date: "2026-07-09"
+    type: deliberation
+    titre: "Liste des délibérations du conseil municipal du 7 juillet 2026"
+    pdf: "2026-07-09-deliberations-cm-7-juillet-2026.pdf"
+  - date: "2026-07-09"
+    type: proces-verbal
+    titre: "Adoption du procès-verbal du conseil municipal du 5 juin 2026"
+    pdf: "2026-07-09-adoption-pv-cm-5-juin-2026.pdf"
+  - date: "2026-07-03"
+    type: arrete-municipal
+    titre: "Interdiction de stationner et déviation pour la fête du Saint-Nectaire du 26 juillet 2026"
+    pdf: "2026-07-03-arrete-stationnement-fete-saint-nectaire.pdf"
+  - date: "2026-07-02"
+    type: convocation
+    titre: "Réunion du conseil municipal le 7 juillet 2026"
+    pdf: "2026-07-02-convocation-cm-7-juillet-2026.pdf"
+  - date: "2026-06-26"
+    type: arrete-municipal
+    titre: "Interdiction de stationner sur certaines places pour la fête de la Sainte-Athilie"
+    pdf: "2026-06-26-arrete-stationnement-fete-sainte-athilie.pdf"
+  - date: "2026-06-19"
+    type: compte-rendu
+    titre: "Compte rendu de la séance du conseil municipal du 5 juin 2026, questions et informations diverses comprises"
+    pdf: "2026-06-19-compte-rendu-cm-5-juin-2026.pdf"
+  - date: "2026-06-12"
+    type: deliberation
+    titre: "Liste des délibérations du conseil municipal du 5 juin 2026"
+    pdf: "2026-06-12-deliberations-cm-5-juin-2026.pdf"
+  - date: "2026-06-12"
+    type: proces-verbal
+    titre: "Adoption du procès-verbal du conseil municipal du 23 avril 2026"
+    pdf: "2026-06-12-adoption-pv-cm-23-avril-2026.pdf"
+  - date: "2026-05-28"
+    type: convocation
+    titre: "Réunion du conseil municipal le 5 juin 2026 à 19 h, avec l'arrêté préfectoral n° 2026-543 du 27 mai 2026 (élection des délégués pour les élections sénatoriales)"
+    pdf: "2026-05-28-convocation-cm-5-juin-2026.pdf"
+  - date: "2026-05-26"
+    type: arrete-municipal
+    titre: "Réglementation de la circulation sur la RD 679 en direction d'Allanche (chicane)"
+    pdf: "2026-05-26-arrete-circulation-rd679-chicane.pdf"
+  - date: "2026-04-30"
+    type: compte-rendu
+    titre: "Compte rendu de la séance du conseil municipal du 23 avril 2026"
+    pdf: "2026-04-30-compte-rendu-cm-23-avril-2026.pdf"
+  - date: "2026-04-29"
+    type: deliberation
+    titre: "Liste des délibérations du conseil municipal du 23 avril 2026"
+    pdf: "2026-04-29-deliberations-cm-23-avril-2026.pdf"
+  - date: "2026-04-29"
+    type: proces-verbal
+    titre: "Adoption du procès-verbal du conseil municipal du 31 mars 2026"
+    pdf: "2026-04-29-adoption-pv-cm-31-mars-2026.pdf"
+  - date: "2026-04-16"
+    type: convocation
+    titre: "Réunion du conseil municipal le 23 avril 2026"
+    pdf: "2026-04-16-convocation-cm-23-avril-2026.pdf"
+  - date: "2026-04-16"
+    type: arrete-municipal
+    numero: "AR_010_2026"
+    titre: "Délégation de fonctions au 1er adjoint, Thierry Maigne"
+    pdf: "2026-04-16-delegation-fonctions-1er-adjoint.pdf"
+  - date: "2026-04-16"
+    type: arrete-municipal
+    numero: "AR_011_2026"
+    titre: "Délégation de fonctions à la 2e adjointe, Aurélie Guérin-Fournier"
+    pdf: "2026-04-16-delegation-fonctions-2e-adjointe.pdf"
+  - date: "2026-04-16"
+    type: arrete-municipal
+    numero: "AR_012_2026"
+    titre: "Délégation de fonctions au 3e adjoint, Lionel Dubois"
+    pdf: "2026-04-16-delegation-fonctions-3e-adjoint.pdf"
+  - date: "2026-04-13"
+    type: compte-rendu
+    titre: "Compte rendu de la séance du conseil municipal du 31 mars 2026"
+    pdf: "2026-04-13-compte-rendu-cm-31-mars-2026.pdf"
+  - date: "2026-04-08"
+    type: deliberation
+    titre: "Liste des délibérations du conseil municipal du 31 mars 2026"
+    pdf: "2026-04-08-deliberations-cm-31-mars-2026.pdf"
+  - date: "2026-04-08"
+    type: proces-verbal
+    titre: "Adoption du procès-verbal du conseil municipal du 20 mars 2026"
+    pdf: "2026-04-08-adoption-pv-cm-20-mars-2026.pdf"
+  - date: "2026-04-08"
+    type: proces-verbal
+    titre: "Adoption du procès-verbal du conseil municipal du 9 mars 2026"
+    pdf: "2026-04-08-adoption-pv-cm-9-mars-2026.pdf"
+  - date: "2026-03-26"
+    type: convocation
+    titre: "Réunion du conseil municipal le 31 mars 2026"
+    pdf: "2026-03-26-convocation-cm-31-mars-2026.pdf"
+  - date: "2026-03-24"
+    type: deliberation
+    titre: "Liste des délibérations du conseil municipal du 20 mars 2026"
+    pdf: "2026-03-24-deliberations-cm-20-mars-2026.pdf"
+  - date: "2026-03-16"
+    type: convocation
+    titre: "Convocation au conseil municipal du 20 mars 2026"
+    pdf: "2026-03-16-convocation-cm-20-mars-2026.pdf"
+  - date: "2026-03-11"
+    type: deliberation
+    titre: "Liste des délibérations du conseil municipal du 9 mars 2026"
+    pdf: "2026-03-11-deliberations-cm-9-mars-2026.pdf"
+  - date: "2026-03-11"
+    type: proces-verbal
+    titre: "Adoption du procès-verbal du conseil municipal du 23 février 2026"
+    pdf: "2026-03-11-adoption-pv-cm-23-fevrier-2026.pdf"
+  - date: "2026-03-03"
+    type: convocation
+    titre: "Convocation au conseil municipal du 9 mars 2026"
+    pdf: "2026-03-03-convocation-cm-9-mars-2026.pdf"
+  - date: "2026-02-26"
+    type: deliberation
+    titre: "Liste des délibérations du conseil municipal du 23 février 2026"
+    pdf: "2026-02-26-deliberations-cm-23-fevrier-2026.pdf"
+  - date: "2026-02-26"
+    type: proces-verbal
+    titre: "Adoption du procès-verbal du conseil municipal du 10 décembre 2025"
+    pdf: "2026-02-26-adoption-pv-cm-10-decembre-2025.pdf"
+  - date: "2026-02-17"
+    type: convocation
+    titre: "Convocation au conseil municipal du 23 février 2026"
+    pdf: "2026-02-17-convocation-cm-23-fevrier-2026.pdf"

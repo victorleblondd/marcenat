@@ -1,0 +1,69 @@
+# Fichiers que GitHub va chercher automatiquement et ajouter au site
+# (programme : outils/recuperer_fichiers.py, lancé par .github/workflows/recuperer-fichiers.yml).
+#
+# Une ligne par fichier :  adresse-source   chemin-dans-le-site   [largeur maximale, pour les photos]
+# - Si le chemin se termine par .pdf et que la source est une image (affiche), elle est convertie en PDF A4.
+#   Plusieurs images séparées par « | » (sans espace) donnent un PDF de plusieurs pages.
+# - Un fichier déjà présent dans le site n'est jamais téléchargé une deuxième fois.
+
+# Logos (repris du site de Saint-Bonnet-de-Condat)
+https://raw.githubusercontent.com/victorleblondd/saint-bonnet-de-condat/main/assets/images/blason-cantal.png  assets/images/blason-cantal.png
+https://raw.githubusercontent.com/victorleblondd/saint-bonnet-de-condat/main/assets/images/logo-massif-du-cezallier.png  assets/images/logo-massif-du-cezallier.png
+
+# Infos & Alertes : affiches de la mairie
+https://panneau-pocket.s3.gra.perf.cloud.ovh.net/cache/sign_image/14220335076acd2bd1a324b3.81455029-1791830993.jpg/41d7acb747d5db62af0748ed68d1beb7  documents/infos-alertes/2026-10-12-octobre-rose-randonnees.pdf
+https://panneau-pocket.s3.gra.perf.cloud.ovh.net/cache/sign_image/5023703006accec8a896204.39208834-1791814794.jpg/704562ac7e4cb0674676504a7f608c5b  documents/infos-alertes/2026-10-12-conteuse-bibliotheque.pdf
+https://panneau-pocket.s3.gra.perf.cloud.ovh.net/cache/sign_image/19329135666ac502e0712621.04439778-1791296224.jpg/4f36db488bb817f9ea74416fb8885d6a  documents/infos-alertes/2026-10-06-octobre-rose-collecte-t-shirts.pdf
+https://panneau-pocket.s3.gra.perf.cloud.ovh.net/cache/sign_image/20764523496ac5024f28f341.43819061-1791296079.jpg/bf4b6b6924e1f2636c6bb092e621d231  documents/infos-alertes/2026-10-06-octobre-rose-aines-ruraux.pdf
+https://panneau-pocket.s3.gra.perf.cloud.ovh.net/cache/sign_image/16652943786ac125243fa470.29119228-1791042852.jpg/850b8c9e903ff242e8b0b909af6b331f  documents/infos-alertes/2026-10-03-collecte-textiles.pdf
+https://panneau-pocket.s3.gra.perf.cloud.ovh.net/cache/sign_image/2080486496abfcf13d6e5e4.59751913-1790955283.jpg/2f9f54d6096e6d7801e14c23581c9a5f  documents/infos-alertes/2026-10-02-octobre-rose-familles-rurales.pdf
+https://panneau-pocket.s3.gra.perf.cloud.ovh.net/cache/sign_image/15291445516aa4503d6c2e98.68238781-1789153341.jpg/0a5dece1c5cb62c015a975043d638ea9  documents/infos-alertes/2026-10-02-secheresse-alerte-rouge.pdf
+https://panneau-pocket.s3.gra.perf.cloud.ovh.net/cache/sign_image/8005308416abe8f436878d1.53237482-1790873411.jpg/b5ffbace00b5c466c5c8a0a046171264|https://panneau-pocket.s3.gra.perf.cloud.ovh.net/cache/sign_image/19434739956abe8f4957ecf9.54955932-1790873417.jpg/98c22f90464318f90e344aa5e9611bde  documents/infos-alertes/2026-10-01-sante-mentale-atelier-aidants.pdf
+https://panneau-pocket.s3.gra.perf.cloud.ovh.net/cache/sign_image/10695596326abd54e67d0c21.60517815-1790792934.jpg/1b5e2694250b6535c6944900b49aff9c  documents/infos-alertes/2026-09-30-repas-chasse-acca.pdf
+https://www.marcenat15.fr/app/download/27496590/AFFICHE+BIBLIOTHEQUE+OT.jpeg  documents/infos-alertes/2026-09-21-horaires-mediatheque-office-de-tourisme.pdf
+https://panneau-pocket.s3.gra.perf.cloud.ovh.net/cache/sign_image/91081124469e8ac5a1a5626.85942772-1776856154.jpg/f294265b82f6146340f6043a2d381dff  documents/infos-alertes/2026-09-18-agence-postale.pdf
+https://panneau-pocket.s3.gra.perf.cloud.ovh.net/cache/sign_image/10514335426a083998baded7.84759608-1778923928.jpg/3ff31d0a02d393e8062c4f5529718d8a  documents/infos-alertes/2026-07-20-osteopathes.pdf
+
+# Transports : horaires des lignes de car
+https://www.marcenat15.fr/app/download/27381768/Cars_Horaires_C33_au+01.09.26.pdf  documents/transports/ligne-c33-marcenat-riom-es-montagnes-mauriac.pdf
+https://www.marcenat15.fr/app/download/27381774/Cars_Horaires_C24_09.26.pdf  documents/transports/ligne-c24-allanche-saint-flour.pdf
+
+# Affichage légal (documents publiés par la mairie depuis janvier 2026)
+https://www.marcenat15.fr/app/download/27509963/compte+rendu+de+la+reunion+du+Conseil+Municipal+du+25+septembre+2026.pdf  documents/affichage-legal/2026-10-09-compte-rendu-cm-25-septembre-2026.pdf
+https://www.marcenat15.fr/app/download/27502184/LISTE+DES+DELIBERATIONS+DU+CM+DU+25+09+26.pdf  documents/affichage-legal/2026-09-28-deliberations-cm-25-septembre-2026.pdf
+https://www.marcenat15.fr/app/download/27502186/ADOPTION+DU+PV+DU+CM+DU+07+07+26.pdf  documents/affichage-legal/2026-09-28-adoption-pv-cm-7-juillet-2026.pdf
+https://www.marcenat15.fr/app/download/27496610/AFFICHAGE+REUNION+CM+25+09+ANNULE+ET+REMPLACE.pdf  documents/affichage-legal/2026-09-21-convocation-cm-25-septembre-2026-modifiee.pdf
+https://www.marcenat15.fr/app/download/27494201/AFFICHAGE+REUNION+DU+CM+le+25+09+26.pdf  documents/affichage-legal/2026-09-18-convocation-cm-25-septembre-2026.pdf
+https://www.marcenat15.fr/app/download/27465088/interdiction+stationner15+08+soiree.pdf  documents/affichage-legal/2026-08-07-arrete-stationnement-soiree-15-aout.pdf
+https://www.marcenat15.fr/app/download/27461331/ARRETE+15+08+26.pdf  documents/affichage-legal/2026-08-04-arrete-stationnement-14-15-aout.pdf
+https://www.marcenat15.fr/app/download/27454297/compte+rendu+du+CONSEIL+MUNICIPAL+DU+07+JUILLET+2026.pdf  documents/affichage-legal/2026-07-23-compte-rendu-cm-7-juillet-2026.pdf
+https://www.marcenat15.fr/app/download/27448036/liste+des+deliberations+du+CM+07+07+26.pdf  documents/affichage-legal/2026-07-09-deliberations-cm-7-juillet-2026.pdf
+https://www.marcenat15.fr/app/download/27448038/PV+DU+CM+DU+05+06+26.pdf  documents/affichage-legal/2026-07-09-adoption-pv-cm-5-juin-2026.pdf
+https://www.marcenat15.fr/app/download/27443512/interdiction+stationner+fete+st+nectaire+26+juillet+26.pdf  documents/affichage-legal/2026-07-03-arrete-stationnement-fete-saint-nectaire.pdf
+https://www.marcenat15.fr/app/download/27442904/AFFICHAGE+PROCHAINE+REUNION+DU+CM+LE+07+JUILLET+2026.pdf  documents/affichage-legal/2026-07-02-convocation-cm-7-juillet-2026.pdf
+https://www.marcenat15.fr/app/download/27438616/arrete+interdiction+stationner+fete.pdf  documents/affichage-legal/2026-06-26-arrete-stationnement-fete-sainte-athilie.pdf
+https://www.marcenat15.fr/app/download/27433696/COMPTE+RENDU+CM+05+06+AVEC+QUESTIONS+ET+INFOS+DIVERSES.pdf  documents/affichage-legal/2026-06-19-compte-rendu-cm-5-juin-2026.pdf
+https://www.marcenat15.fr/app/download/27428550/CONSEIL+MUNICIPAL+DU+05+JUIN+26+LISTE+DES+DELIBERATIONS.pdf  documents/affichage-legal/2026-06-12-deliberations-cm-5-juin-2026.pdf
+https://www.marcenat15.fr/app/download/27428552/ADOPTION+DU+PV+DU+CM+DU+23+AVRIL+26.pdf  documents/affichage-legal/2026-06-12-adoption-pv-cm-23-avril-2026.pdf
+https://www.marcenat15.fr/app/download/27417559/CONSEIL+MUNICIPAL+DU+05+JUIN+2026.pdf  documents/affichage-legal/2026-05-28-convocation-cm-5-juin-2026.pdf
+https://www.marcenat15.fr/app/download/27415151/arret%C3%A9+municipal+pose+chicane.pdf  documents/affichage-legal/2026-05-26-arrete-circulation-rd679-chicane.pdf
+https://www.marcenat15.fr/app/download/27392088/compte+rendu+de+la+seance+du+CM+du+23+avril+26-001.pdf  documents/affichage-legal/2026-04-30-compte-rendu-cm-23-avril-2026.pdf
+https://www.marcenat15.fr/app/download/27391572/liste+des+deliberations+seance+du+23+avril+2026.pdf  documents/affichage-legal/2026-04-29-deliberations-cm-23-avril-2026.pdf
+https://www.marcenat15.fr/app/download/27391578/ADOPTION+DU+PV+DU+CM+DU+31+MARS+26.pdf  documents/affichage-legal/2026-04-29-adoption-pv-cm-31-mars-2026.pdf
+https://www.marcenat15.fr/app/download/27378308/conseil+municipal+du+23+avril+2026+AFFICHAGE.pdf  documents/affichage-legal/2026-04-16-convocation-cm-23-avril-2026.pdf
+https://www.marcenat15.fr/app/download/27378311/DELEGATION+FONCTION+MAIGNE.pdf  documents/affichage-legal/2026-04-16-delegation-fonctions-1er-adjoint.pdf
+https://www.marcenat15.fr/app/download/27378313/DELEGATION+FONCTION+GUERIN+FOURNIER.pdf  documents/affichage-legal/2026-04-16-delegation-fonctions-2e-adjointe.pdf
+https://www.marcenat15.fr/app/download/27378315/DELEGATION+FONCTION+DUBOIS.pdf  documents/affichage-legal/2026-04-16-delegation-fonctions-3e-adjoint.pdf
+https://www.marcenat15.fr/app/download/27375273/compte+rendu+CONSEIL+MUNICIPAL+31+MARS+26.pdf  documents/affichage-legal/2026-04-13-compte-rendu-cm-31-mars-2026.pdf
+https://www.marcenat15.fr/app/download/27371158/liste+des+deliberations+du+CONSEIL+MUNICIPAL+DU+31+MARS+2026.pdf  documents/affichage-legal/2026-04-08-deliberations-cm-31-mars-2026.pdf
+https://www.marcenat15.fr/app/download/27371234/ADOPTION+DU+PV+DU+CONSEIL+MUNICIPAL+DU+31+MARS+2026.pdf  documents/affichage-legal/2026-04-08-adoption-pv-cm-20-mars-2026.pdf
+https://www.marcenat15.fr/app/download/27371231/ADOPTION+DU+PV+DU+CONSEIL+MUNICIPAL+DU+09+MARS+2026.pdf  documents/affichage-legal/2026-04-08-adoption-pv-cm-9-mars-2026.pdf
+https://www.marcenat15.fr/app/download/27356988/AFFICHAGE+REUNION+DU+CONSEIL+MUNICIPAL+DU+31+MARS+2026.pdf  documents/affichage-legal/2026-03-26-convocation-cm-31-mars-2026.pdf
+https://www.marcenat15.fr/app/download/27355433/liste+des+deliberations+du+CM+du+20+mars+26.pdf  documents/affichage-legal/2026-03-24-deliberations-cm-20-mars-2026.pdf
+https://www.marcenat15.fr/app/download/27347624/CONVOCAION+DU+CONSEIL+MUNICIPAL+DU+20+MARS2026.pdf  documents/affichage-legal/2026-03-16-convocation-cm-20-mars-2026.pdf
+https://www.marcenat15.fr/app/download/27344172/LISTE+DES+DELIBERATIONS+SEANCE+DU+9+MARS+2026.pdf  documents/affichage-legal/2026-03-11-deliberations-cm-9-mars-2026.pdf
+https://www.marcenat15.fr/app/download/27344193/PV+DU+CONSEIL+MUNICIPAL+DU+23+FEVRIER+2026.pdf  documents/affichage-legal/2026-03-11-adoption-pv-cm-23-fevrier-2026.pdf
+https://www.marcenat15.fr/app/download/27336171/reunion+du+CONSEIL+MUNICIPAL+du+9+mars+2026.pdf  documents/affichage-legal/2026-03-03-convocation-cm-9-mars-2026.pdf
+https://www.marcenat15.fr/app/download/27332018/Liste+des+deliberations+du+C+Municipal+du+23+fevrier+2026.pdf  documents/affichage-legal/2026-02-26-deliberations-cm-23-fevrier-2026.pdf
+https://www.marcenat15.fr/app/download/27332015/Delb+d+adoption+du+PV+du+10+dec+2025.pdf  documents/affichage-legal/2026-02-26-adoption-pv-cm-10-decembre-2025.pdf
+https://www.marcenat15.fr/app/download/27322817/AFFICHAGE+REUNION+CONSEIL+MUNICIPAL+DU+23+02+2026.pdf  documents/affichage-legal/2026-02-17-convocation-cm-23-fevrier-2026.pdf

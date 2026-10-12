@@ -1,0 +1,195 @@
+# =====================================================================
+#  INFOS & ALERTES DE LA MAIRIE
+#  La publication la plus récente se place TOUT EN HAUT de la liste.
+#
+#  Ajouter un avis en PDF :
+#    1. Déposer le fichier PDF dans le dossier  documents/infos-alertes/
+#       Nom conseillé : AAAA-MM-JJ-sujet-court.pdf  (sans accents ni espaces)
+#       (ou ajouter son adresse dans outils/fichiers-a-recuperer.txt : voir README.md)
+#    2. Copier le modèle ci-dessous tout en haut de la liste, puis le remplir.
+#
+#  - date: "AAAA-MM-JJ"               date de l'avis
+#    heure: "HH:MM"                   facultatif
+#    type: alerte                     alerte (rouge) ou info (bleu)
+#    theme: eau                       eau, travaux, vie (services et vie locale)
+#    titre: "Titre de l'avis"
+#    resume: "Une ou deux phrases qui disent l'essentiel."
+#    pdf: "AAAA-MM-JJ-sujet-court.pdf"    nom exact du fichier déposé
+#    bandeau_jusquau: "AAAA-MM-JJ"    facultatif : bandeau rouge sur l'accueil
+#                                     jusqu'à cette date incluse (alertes)
+#
+#  Champ facultatif « texte » : le texte complet de l'avis (version lisible
+#  sans ouvrir le PDF). Les avis sans PDF affichent ce texte.
+# =====================================================================
+
+- date: "2026-10-12"
+  type: info
+  theme: vie
+  titre: "Octobre Rose : randonnées solidaires, dimanche 18 octobre"
+  resume: "Le Club des aînés ruraux du Cézallier, le Comité des fêtes, Familles rurales et Marche Nat' vous invitent le dimanche 18 octobre, dès 8 h 30, à la Maison des sports de nature. Tous les bénéfices seront reversés à la Ligue contre le cancer."
+  pdf: "2026-10-12-octobre-rose-randonnees.pdf"
+  texte: |
+    <p><strong>Ensemble contre le cancer</strong> : dimanche 18 octobre, à partir de 8 h 30, à la Maison des sports de nature, 30 route du Cézallier.</p>
+    <ul>
+      <li>exposition d'information sur le cancer du sein ;</li>
+      <li>buvette : boissons chaudes et fraîches, vin chaud ;</li>
+      <li>trois randonnées à prix libre : la petite, pour découvrir le parcours pédagogique de l'INRAE ; la moyenne, pour flâner sur 7 km ; la grande, pour une belle marche de 14 km ;</li>
+      <li>collation offerte ;</li>
+      <li>pâtisseries à déguster sur place ou à emporter : gâteaux, gaufres et crêpes maison ;</li>
+      <li>tombola.</li>
+    </ul>
+    <p>Avec le Club des aînés ruraux du Cézallier de Marcenat, le Comité des fêtes, Familles rurales et Marche Nat'. Tous les bénéfices seront reversés à la Ligue contre le cancer.</p>
+
+- date: "2026-10-12"
+  type: info
+  theme: vie
+  titre: "Spectacle de contes à la bibliothèque, mardi 13 octobre"
+  resume: "La bibliothèque de Marcenat accueille Angélique Pennetier, conteuse, le mardi 13 octobre à 17 h, pour un spectacle drôle, poétique et magique, qui ravira petits et grands. Participation libre."
+  pdf: "2026-10-12-conteuse-bibliotheque.pdf"
+  texte: |
+    <p>La bibliothèque de Marcenat aura le plaisir d'accueillir <strong>Angélique Pennetier, conteuse</strong>, pour un spectacle drôle, poétique et magique, qui ravira petits et grands.</p>
+    <p><strong>Mardi 13 octobre à 17 h</strong>, à la bibliothèque de Marcenat. Participation libre.</p>
+    <p>Venez nombreux partager ce beau moment d'évasion et laisser place à l'imaginaire !</p>
+
+- date: "2026-10-06"
+  type: info
+  theme: vie
+  titre: "Octobre Rose : collecte de T-shirts tout le mois"
+  resume: "Tout au long du mois d'octobre, déposez vos T-shirts propres et en coton, même troués ou tachés : ils seront transformés en bonnets destinés aux personnes atteintes de cancer."
+  pdf: "2026-10-06-octobre-rose-collecte-t-shirts.pdf"
+  texte: |
+    <p>Tout au long du mois d'<strong>octobre 2026</strong>, une collecte de T-shirts est organisée pour une belle action solidaire.</p>
+    <p><strong>Quels T-shirts donner ?</strong> Des T-shirts propres et en coton, même s'ils sont troués ou tachés. Ils seront transformés en bonnets destinés aux personnes atteintes de cancer.</p>
+    <p><strong>Où les déposer ?</strong></p>
+    <ul>
+      <li>à la boulangerie ;</li>
+      <li>au Relais des Mousquetaires ;</li>
+      <li>à la Poste ;</li>
+      <li>à la médiathèque ;</li>
+      <li>et dans les autres points de collecte participants.</li>
+    </ul>
+    <p>Un simple T-shirt peut ainsi avoir une seconde vie et devenir un geste de solidarité.</p>
+
+- date: "2026-10-06"
+  type: info
+  theme: vie
+  titre: "Octobre Rose : le Club des aînés ruraux sur le marché, jeudi 15 octobre"
+  resume: "Le Club des aînés ruraux du Cézallier de Marcenat vous attend sur le marché le jeudi 15 octobre, avec des objets réalisés par ses adhérents. Participation libre : l'intégralité des bénéfices sera reversée à Octobre Rose."
+  pdf: "2026-10-06-octobre-rose-aines-ruraux.pdf"
+  texte: |
+    <p>Le Club des aînés ruraux du Cézallier de Marcenat se mobilise à l'occasion d'Octobre Rose.</p>
+    <p>Rendez-vous le <strong>jeudi 15 octobre 2026 sur le marché de Marcenat</strong> : de nombreux objets réalisés avec soin par les adhérents vous seront proposés. Participation libre.</p>
+    <p>L'intégralité des bénéfices sera reversée à Octobre Rose. Chaque geste compte !</p>
+
+- date: "2026-10-03"
+  type: info
+  theme: vie
+  titre: "Collecte de textiles du 26 au 30 octobre"
+  resume: "La commune accueille une collecte de textiles du 26 au 30 octobre 2026. Dépôt des sacs à l'ancien Économat, 12 place de Castellane, du lundi au vendredi de 9 h à 16 h 30."
+  pdf: "2026-10-03-collecte-textiles.pdf"
+  texte: |
+    <p>La commune de Marcenat accueille une collecte de textiles <strong>du 26 au 30 octobre 2026</strong>.</p>
+    <ul>
+      <li>Dépôt des sacs : ancien Économat, 12 place de Castellane, du lundi au vendredi, de 9 h à 16 h 30.</li>
+      <li>Tous les vêtements, le linge de maison et les chaussures usagés peuvent être déposés, quel que soit leur état, même abîmés.</li>
+      <li>Les textiles doivent être propres et secs, placés dans un sac de 30 litres.</li>
+      <li>Les chaussures doivent être liées par paire.</li>
+    </ul>
+    <p>Renseignements : SYTEC, Syndicat des territoires de l'Est Cantal, au <a href="tel:+33471607264">04 71 60 72 64</a>.</p>
+
+- date: "2026-10-02"
+  type: info
+  theme: vie
+  titre: "Octobre Rose : Familles rurales sur le marché, jeudi 22 octobre"
+  resume: "L'association Familles rurales de Marcenat vend des sacs cabas et des stylos sur le marché le jeudi 22 octobre. L'intégralité des bénéfices sera reversée à la lutte contre le cancer du sein."
+  pdf: "2026-10-02-octobre-rose-familles-rurales.pdf"
+  texte: |
+    <p>Ensemble contre le cancer du sein ! L'association Familles rurales de Marcenat se mobilise pour Octobre Rose.</p>
+    <p>Retrouvez-la <strong>sur le marché le jeudi 22 octobre</strong> pour une vente de sacs cabas et de stylos.</p>
+    <p>L'intégralité des bénéfices sera reversée à la lutte contre le cancer du sein.</p>
+
+- date: "2026-10-02"
+  type: alerte
+  theme: eau
+  titre: "Alerte sécheresse rouge : restrictions renforcées des usages de l'eau"
+  resume: "La situation hydrologique reste très critique. Un nouvel arrêté préfectoral renforce les restrictions des usages de l'eau : les mesures qui s'appliquent à votre adresse sont détaillées sur vigieau.gouv.fr."
+  pdf: "2026-10-02-secheresse-alerte-rouge.pdf"
+  texte: |
+    <p>Malgré les précipitations enregistrées ces derniers jours, la situation hydrologique reste très critique : les pluies sont restées trop faibles et trop localisées pour recharger efficacement les nappes ou soutenir durablement le débit des cours d'eau.</p>
+    <p>Après consultation du comité de suivi opérationnel de l'étiage le 8 septembre 2026, le préfet a pris un nouvel arrêté :</p>
+    <ul>
+      <li>Alagnon, Haut-Allier, Truyère en Ander, affluents du Lot domanial amont, Maronne-Auze, Sumène et Rhue sont classés en <strong>crise</strong> ;</li>
+      <li>Truyère en Aubrac, Truyère aval, Célé, Veyre et Cère restent classés en alerte renforcée ;</li>
+      <li>la rivière Lot reste en vigilance.</li>
+    </ul>
+    <p>Le préfet en appelle à la responsabilité de chacun pour maintenir tous les efforts d'économie de la ressource en eau.</p>
+    <p>Le détail des mesures est consultable en indiquant votre adresse sur <a href="https://vigieau.gouv.fr/" rel="noopener">vigieau.gouv.fr</a>.</p>
+
+- date: "2026-10-01"
+  type: info
+  theme: vie
+  titre: "Santé mentale : atelier pour les aidants, mardi 13 octobre à l'EHPAD"
+  resume: "Dans le cadre des Semaines d'information sur la santé mentale, un atelier gratuit, « Ouvrir le dialogue avec les outils du théâtre », est proposé aux aidants de personnes ayant des troubles neuro-évolutifs, le mardi 13 octobre de 14 h 30 à 16 h 30 à l'EHPAD de Marcenat. Sur inscription."
+  pdf: "2026-10-01-sante-mentale-atelier-aidants.pdf"
+  texte: |
+    <p>Dans le cadre des Semaines d'information sur la santé mentale (octobre et novembre 2026 dans l'est du Cantal), un rendez-vous gratuit est proposé à Marcenat :</p>
+    <p><strong>Mardi 13 octobre, de 14 h 30 à 16 h 30</strong>, à l'EHPAD de Marcenat : atelier « Ouvrir le dialogue avec les outils du théâtre », destiné aux aidants de personnes ayant des troubles neuro-évolutifs.</p>
+    <p>Sur inscription, 12 personnes au maximum : <a href="mailto:cls@saintflourco.fr">cls@<wbr>saintflourco.fr</a> ou <a href="tel:+33634844849">06 34 84 48 49</a>.</p>
+
+- date: "2026-09-30"
+  type: info
+  theme: vie
+  titre: "Repas de la chasse de l'ACCA, samedi 31 octobre"
+  resume: "L'ACCA de Marcenat organise son repas de la chasse le samedi 31 octobre 2026 à 19 h 30, chez Kevin. 22 €, ouvert à tous, sur réservation."
+  pdf: "2026-09-30-repas-chasse-acca.pdf"
+  texte: |
+    <p><strong>Samedi 31 octobre 2026 à 19 h 30</strong>, chez « Kevin » : repas de la chasse de l'ACCA de Marcenat. 22 €, ouvert à tous.</p>
+    <p>Réservations : Kevin au <a href="tel:+33471692823">04 71 69 28 23</a> ou J.-L. Durand au <a href="tel:+33659553819">06 59 55 38 19</a>.</p>
+
+- date: "2026-09-21"
+  type: info
+  theme: vie
+  titre: "Médiathèque et office de tourisme : nouveaux horaires à partir du 1er octobre"
+  resume: "À compter du 1er octobre, la médiathèque et le point d'accueil de l'office de tourisme sont ouverts du lundi au jeudi, de 14 h à 17 h 30."
+  pdf: "2026-09-21-horaires-mediatheque-office-de-tourisme.pdf"
+  texte: |
+    <p>La médiathèque et le point d'accueil de Hautes Terres Tourisme seront ouverts <strong>du lundi au jeudi, de 14 h à 17 h 30</strong>, à compter du 1<sup>er</sup> octobre 2026.</p>
+
+- date: "2026-09-18"
+  type: info
+  theme: vie
+  titre: "Agence postale communale : ouverte du lundi au jeudi, de 9 h à 12 h"
+  resume: "L'agence postale communale vous accueille du lundi au jeudi, de 9 h à 12 h, 3 rue du Florac, à la maison des services."
+  pdf: "2026-09-18-agence-postale.pdf"
+
+- date: "2026-07-20"
+  type: info
+  theme: vie
+  titre: "Ostéopathie : consultations le mercredi"
+  resume: "Le cabinet d'ostéopathie reçoit les mercredis, de 9 h à 20 h. Séance d'une heure, 55 €. Réservation uniquement par téléphone, au 06 50 20 75 03."
+  pdf: "2026-07-20-osteopathes.pdf"
+  texte: |
+    <ul>
+      <li>Quand : les mercredis, de 9 h à 20 h ;</li>
+      <li>séance : 1 h ;</li>
+      <li>tarif : 55 € ;</li>
+      <li>réservation uniquement par téléphone, au <a href="tel:+33650207503">06 50 20 75 03</a>.</li>
+    </ul>
+
+- date: "2026-05-12"
+  type: info
+  theme: vie
+  titre: "Horaires de la mairie et permanences des élus"
+  resume: "Le secrétariat de mairie est ouvert du lundi au vendredi de 8 h à 12 h, et de 13 h 30 à 16 h 30 les lundi, mercredi et vendredi. Philippe Vialle, maire, reçoit les lundis, mardis et jeudis de 9 h 30 à 12 h."
+  texte: |
+    <p><strong>Ouverture au public de la mairie</strong>, 3 place de la Mairie :</p>
+    <ul>
+      <li>lundi : 8 h – 12 h et 13 h 30 – 16 h 30 ;</li>
+      <li>mardi : 8 h – 12 h ;</li>
+      <li>mercredi : 8 h – 12 h et 13 h 30 – 16 h 30 ;</li>
+      <li>jeudi : 8 h – 12 h ;</li>
+      <li>vendredi : 8 h – 12 h et 13 h 30 – 16 h 30.</li>
+    </ul>
+    <p><strong>Permanence de Philippe Vialle, maire</strong> : tous les lundis, mardis et jeudis, de 9 h 30 à 12 h, avec ou sans rendez-vous.</p>
+    <p><strong>Permanence de Thierry Maigne, 1<sup>er</sup> adjoint</strong> : tous les mercredis, de 9 h 30 à 12 h.</p>
+    <p>Contacter la mairie : <a href="tel:+33471788253">04 71 78 82 53</a> ou <a href="mailto:marcenat.mairie@wanadoo.fr">marcenat.mairie@<wbr>wanadoo.fr</a>.</p>
