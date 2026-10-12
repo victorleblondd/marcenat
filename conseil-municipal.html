@@ -1,0 +1,56 @@
+---
+title: "Le conseil municipal"
+permalink: /conseil-municipal/
+chapo: "Quinze élus au service de la commune. Le maire et ses trois adjoints ont été élus lors de la séance du 20 mars 2026."
+description: "Le conseil municipal de Marcenat : le maire Philippe Vialle, les adjoints et leurs délégations, les conseillers municipaux et les permanences des élus."
+---
+{%- assign e = site.data.elus -%}
+{%- assign m = site.data.mairie -%}
+<section class="bloc" aria-labelledby="titre-permanences">
+  <h2 id="titre-permanences" class="titre-decore">Le maire et les adjoints</h2>
+  <p class="bloc-intro">Pour toute question, contactez l'élu chargé du sujet par l'intermédiaire de la mairie, au <a href="tel:{{ m.telephone_lien }}">{{ m.telephone }}</a>.</p>
+  <div class="grille-2">
+    <div class="panneau carte-elu">
+      <p class="fonction">{{ e.maire.fonction }}</p>
+      <h3 class="nom">{{ e.maire.nom }}</h3>
+      <p class="mandat">{{ e.maire.mandat }}</p>
+      <p class="permanence">{{ e.maire.permanence }}</p>
+    </div>
+    {%- for a in e.adjoints %}
+    <div class="panneau carte-elu">
+      <p class="fonction">{{ a.fonction | replace: "1er", "1<sup>er</sup>" | replace: "2e", "2<sup>e</sup>" | replace: "3e", "3<sup>e</sup>" }}</p>
+      <h3 class="nom">{{ a.nom }}</h3>
+      {%- if a.mandat %}
+      <p class="mandat">{{ a.mandat }}</p>
+      {%- endif %}
+      {%- if a.permanence %}
+      <p class="permanence">{{ a.permanence }}</p>
+      {%- endif %}
+      <p class="permanence">Délégations : {{ a.domaines }}.</p>
+    </div>
+    {%- endfor %}
+  </div>
+</section>
+
+<div class="grille-asymetrique bloc">
+  <section class="panneau" aria-labelledby="titre-conseillers">
+    <h2 id="titre-conseillers" class="h3-like">Les conseillers municipaux</h2>
+    <ul class="liste-noms">
+      {%- for c in e.conseillers %}
+      <li>{{ c }}</li>
+      {%- endfor %}
+    </ul>
+  </section>
+  <div class="pile">
+    <section class="panneau panneau--info" aria-labelledby="titre-seances">
+      <h2 id="titre-seances" class="h3-like">Les séances du conseil</h2>
+      <p>Convocations, comptes rendus, listes des délibérations et procès-verbaux sont publiés à l'affichage légal.</p>
+      <p><a class="lien-fleche" href="{{ '/affichage-legal/' | relative_url }}">Affichage légal{% include icone.html nom="fleche" %}</a></p>
+    </section>
+    <section class="panneau" aria-labelledby="titre-intercommunalite">
+      <h2 id="titre-intercommunalite" class="h3-like">Hautes Terres Communauté</h2>
+      <p>Marcenat fait partie de Hautes Terres Communauté. La commune y est représentée par {{ e.maire.nom }} et {{ e.adjoints[0].nom }}, conseillers communautaires.</p>
+      <p><a class="lien-fleche" href="https://www.hautesterres.fr" rel="noopener">hautesterres.fr{% include icone.html nom="externe" %}</a></p>
+    </section>
+  </div>
+</div>

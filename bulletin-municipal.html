@@ -1,0 +1,45 @@
+---
+title: "Le bulletin municipal"
+permalink: /bulletin-municipal/
+chapo: "Marcenat Infos, le bulletin municipal : un format simple, court et clair, en complément de l'information en ligne. Le premier numéro est paru à l'été 2026."
+description: "Marcenat Infos, bulletin municipal de Marcenat : le mot du maire et les articles du n°1 (été 2026)."
+---
+<div class="grille-asymetrique bloc">
+  <section class="bloc" aria-labelledby="titre-mot">
+    <p class="surtitre">Marcenat Infos n°1 · été 2026</p>
+    <h2 id="titre-mot">Le mot du maire</h2>
+    <p>Chères Marcenataises, chers Marcenatais,</p>
+    <p>Avant toute chose, je tiens à saluer l'engagement et le dévouement de Colette Ponchet-Passemard, qui a consacré douze années à notre commune. Cela mérite, amplement, notre reconnaissance et notre respect.</p>
+    <p>Voici donc votre premier numéro de <em>Marcenat Infos</em>. Nous avons souhaité privilégier un format simple, court et clair pour aller à l'essentiel et venir en complément de notre communication numérique, déjà bien en place, mais pas toujours accessible à tous. Ce bulletin est le vôtre et nous restons à votre écoute pour l'améliorer et le faire évoluer.</p>
+    <p>Ces quatre premiers mois de mandat sont déjà riches de quelques réalisations concrètes et de beaux projets en cours, conformément à nos engagements et au vote du budget. Parmi ces projets, les travaux d'assainissement dans le centre bourg seront particulièrement impactants, mais vraiment nécessaires. Nous y reviendrons de manière plus détaillée au fur et à mesure de leur avancement.</p>
+    <p>Je veux aussi souligner le travail et l'engagement de nos associations et des bénévoles qui les font vivre. Grâce à leurs actions et à leurs initiatives, nous avons un programme estival riche et varié avec, en prime cette année, un événement de grande envergure : la 25<sup>e</sup> édition du concours Saint-Nectaire, le dimanche 26 juillet. C'est l'occasion pour moi de remercier chaleureusement toutes les associations qui participent à sa réussite et les nombreux bénévoles mobilisés. Une opportunité supplémentaire à saisir pour faire briller notre commune et ses savoir-faire.</p>
+    <p>Avec mon équipe, nous vous souhaitons le meilleur pour cet été !</p>
+    <p class="signature">Philippe Vialle, maire</p>
+  </section>
+  <aside class="panneau" aria-labelledby="titre-sommaire">
+    <h2 id="titre-sommaire" class="h3-like">Au sommaire du n°1</h2>
+    <ul class="liste-simple">
+      <li><a href="{{ '/bulletin-municipal/l-ecole-conserve-ses-deux-classes/' | relative_url }}">Nos réalisations : l'école</a></li>
+      <li><a href="{{ '/bulletin-municipal/travaux-securite-voirie-et-logement-communal/' | relative_url }}">Nos réalisations : travaux</a></li>
+      <li><a href="{{ '/bulletin-municipal/le-defibrillateur-accessible-en-permanence/' | relative_url }}">Nos réalisations : vie pratique</a></li>
+      <li><a href="{{ '/bulletin-municipal/deux-osteopathes-dans-l-ancien-cabinet-medical/' | relative_url }}">Nos réalisations : santé</a></li>
+      <li><a href="{{ '/bulletin-municipal/le-jardin-d-helene/' | relative_url }}">Nos réalisations : partage</a></li>
+      <li><a href="{{ '/bulletin-municipal/canisacs-et-fleurissement/' | relative_url }}">Civisme et fleurissement</a></li>
+      <li><a href="{{ '/bulletin-municipal/inauguration-du-sentier-au-coeur-des-paturages/' | relative_url }}">Inauguration du sentier « Au cœur des pâturages »</a></li>
+      <li><a href="{{ '/bulletin-municipal/nos-projets-fontaines-eclairage-public-et-place-du-couderc/' | relative_url }}">Nos projets : fontaines, éclairage public, place du Couderc</a></li>
+      <li><a href="{{ '/bulletin-municipal/nos-projets-colombarium-retable-assainissement-et-chemins/' | relative_url }}">Nos projets : colombarium, retable, assainissement, chemins</a></li>
+      <li><a href="{{ '/bulletin-municipal/le-programme-de-l-ete-2026/' | relative_url }}">Vie associative : le programme de l'été</a></li>
+      <li><a href="{{ '/mairie/' | relative_url }}#contact">Contact et infos pratiques</a></li>
+    </ul>
+    <p class="note">Numéro réalisé par Maud Germain, Philippe Vialle et Thierry Maigne.</p>
+  </aside>
+</div>
+
+<section class="bloc" id="articles" aria-labelledby="titre-articles">
+  <h2 id="titre-articles" class="titre-decore">Les articles du n°1</h2>
+  <div class="grille-cartes">
+    {%- for p in site.posts %}
+    {% include carte-article.html article=p %}
+    {%- endfor %}
+  </div>
+</section>

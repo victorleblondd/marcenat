@@ -1,0 +1,161 @@
+---
+title: "Vie pratique"
+permalink: /vie-pratique/
+chapo: "Urgences et santé, sécheresse, déchets, transports, enfance et jeunesse, démarches administratives : les informations utiles au quotidien."
+description: "Vie pratique à Marcenat : numéros d'urgence, médecins, pharmacie, défibrillateur, sécheresse, déchets, lignes de car C33 et C24, transport à la demande, enfance et jeunesse, France Services."
+---
+{%- assign m = site.data.mairie -%}
+{%- assign s = site.data.secheresse -%}
+<nav class="sommaire" aria-label="Sur cette page">
+  <ul>
+    <li><a href="#sante">Urgences et santé</a></li>
+    {%- if s.actif %}
+    <li><a href="#secheresse">Sécheresse</a></li>
+    {%- endif %}
+    <li><a href="#dechets">Déchets et propreté</a></li>
+    <li><a href="#transports">Transports</a></li>
+    <li><a href="#jeunesse">Enfance et jeunesse</a></li>
+    <li><a href="#demarches">Démarches</a></li>
+  </ul>
+</nav>
+
+<section class="bloc" id="sante" aria-labelledby="titre-sante">
+  <h2 id="titre-sante" class="titre-decore">Urgences et santé</h2>
+  <ul class="urgences" aria-label="Numéros d'urgence">
+    <li><a href="tel:112"><span class="urgence-numero">112</span><span>Appel d'urgence européen</span></a></li>
+    <li><a href="tel:15"><span class="urgence-numero">15</span><span>SAMU</span></a></li>
+    <li><a href="tel:18"><span class="urgence-numero">18</span><span>Pompiers</span></a></li>
+    <li><a href="tel:17"><span class="urgence-numero">17</span><span>Gendarmerie</span></a></li>
+  </ul>
+  <div class="grille-2">
+    <div class="panneau">
+      <h3>Médecins</h3>
+      <div class="coordonnees">
+        <div>{% include icone.html nom="maison" %}<span><strong>Maison de santé du Cézallier</strong>, à Condat<br><a href="tel:+33471696659">04 71 69 66 59</a></span></div>
+        <div>{% include icone.html nom="maison" %}<span><strong>Maison de santé d'Allanche</strong><br><a href="tel:+33471204205">04 71 20 42 05</a></span></div>
+      </div>
+    </div>
+    <div class="panneau">
+      <h3>Pharmacie du Cézallier</h3>
+      <p>Ouverte du mardi au samedi à Marcenat. Homéopathie, orthopédie, vente et location de matériel médical.</p>
+      <div class="coordonnees">
+        <p>{% include icone.html nom="lieu" %}<span>29 Grande Rue</span></p>
+        <p>{% include icone.html nom="telephone" %}<a href="tel:+33471788115">04 71 78 81 15</a></p>
+      </div>
+    </div>
+    <div class="panneau">
+      <h3>Ostéopathie</h3>
+      <p>Consultations dans l'ancien cabinet médical, <strong>les mercredis de 9 h à 20 h</strong>. Rendez-vous uniquement par téléphone.</p>
+      <div class="coordonnees">
+        <p>{% include icone.html nom="telephone" %}<a href="tel:+33650207503">06 50 20 75 03</a></p>
+      </div>
+    </div>
+    <div class="panneau panneau--vert">
+      <h3>Défibrillateur</h3>
+      <p>Un défibrillateur est installé dans les toilettes publiques du parc : il est <strong>accessible directement, à toute heure</strong>.</p>
+      <p>L'EHPAD de Marcenat (maison de retraite Tible) : <a href="http://www.retraite-tible.fr" rel="noopener">retraite-tible.fr</a>.</p>
+    </div>
+  </div>
+</section>
+
+{%- if s.actif %}
+<section class="bloc" id="secheresse" aria-labelledby="titre-secheresse">
+  <h2 id="titre-secheresse" class="titre-decore">Sécheresse : restrictions des usages de l'eau</h2>
+  <div class="panneau panneau--alerte">
+    <p class="mise-en-avant">Alerte sécheresse rouge : le préfet a renforcé les restrictions des usages de l'eau. Le nord du département est classé en crise.</p>
+    <p>Les restrictions peuvent évoluer. Pour connaître celles qui s'appliquent à votre adresse, consultez <a href="https://vigieau.gouv.fr/" rel="noopener">vigieau.gouv.fr</a>, le site officiel de l'État. Plus d'informations sur <a href="https://www.cantal.gouv.fr" rel="noopener">cantal.gouv.fr</a>.</p>
+    <p><a class="lien-fleche" href="{{ '/infos-alertes/' | relative_url }}#{{ s.avis }}">L'avis de la mairie{% include icone.html nom="fleche" %}</a></p>
+  </div>
+</section>
+{%- endif %}
+
+<section class="bloc" id="dechets" aria-labelledby="titre-dechets">
+  <h2 id="titre-dechets" class="titre-decore">Déchets et propreté</h2>
+  <div class="grille-3">
+    <div class="panneau">
+      <h3>Ordures ménagères et tri</h3>
+      <p>La collecte des ordures ménagères et le recyclage sont organisés avec Hautes Terres Communauté.</p>
+      <p><a class="lien-fleche" href="https://www.hautesterres.fr" rel="noopener">hautesterres.fr{% include icone.html nom="externe" %}</a></p>
+    </div>
+    <div class="panneau">
+      <h3>Collecte de textiles</h3>
+      <p>Du 26 au 30 octobre 2026, à l'ancien Économat, 12 place de Castellane, du lundi au vendredi, de 9 h à 16 h 30 : vêtements, linge de maison et chaussures usagés, quel que soit leur état.</p>
+      <p><a class="lien-fleche" href="{{ '/infos-alertes/' | relative_url }}#2026-10-03-collecte-de-textiles-du-26-au-30-octobre">L'avis de la mairie{% include icone.html nom="fleche" %}</a></p>
+    </div>
+    <div class="panneau">
+      <h3>Canisacs</h3>
+      <p>Trois distributeurs de sacs pour les déjections canines sont installés : deux aux extrémités du chemin du Pointou, un sur le parking du gîte de la Poste. Merci de garder nos espaces publics propres.</p>
+    </div>
+  </div>
+</section>
+
+<section class="bloc" id="transports" aria-labelledby="titre-transports">
+  <h2 id="titre-transports" class="titre-decore">Transports</h2>
+  <div class="grille-2">
+    <div class="panneau">
+      <h3>Lignes de car</h3>
+      <p>Deux lignes régionales desservent la commune. Les horaires sont aussi disponibles en mairie.</p>
+      <ul class="liste-documents">
+        <li><a href="{{ '/documents/transports/ligne-c33-marcenat-riom-es-montagnes-mauriac.pdf' | relative_url }}" target="_blank" rel="noopener">{% include icone.html nom="document" %}<span><strong>Ligne C33</strong> Marcenat – Riom-ès-Montagnes – Mauriac<span class="note"> · horaires au 1<sup>er</sup> septembre 2026 (PDF)</span></span></a></li>
+        <li><a href="{{ '/documents/transports/ligne-c24-allanche-saint-flour.pdf' | relative_url }}" target="_blank" rel="noopener">{% include icone.html nom="document" %}<span><strong>Ligne C24</strong> Allanche – Saint-Flour<span class="note"> · horaires de septembre 2026 (PDF)</span></span></a></li>
+      </ul>
+    </div>
+    <div class="pile">
+      <div class="panneau">
+        <h3>Transport à la demande</h3>
+        <p>Service de Hautes Terres Communauté : réservez 48 heures à l'avance au numéro unique <a href="tel:+33471640657"><strong>04 71 64 06 57</strong></a>.</p>
+      </div>
+      <div class="panneau">
+        <h3>Navette du Département</h3>
+        <p>Une navette du Conseil départemental relie Condat à Clermont-Ferrand, dans les deux sens.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bloc" id="jeunesse" aria-labelledby="titre-jeunesse">
+  <h2 id="titre-jeunesse" class="titre-decore">Enfance et jeunesse</h2>
+  <div class="grille-2">
+    <div class="panneau">
+      <h3>Accueils de loisirs</h3>
+      <p>Hautes Terres Communauté accueille les enfants de 4 à 16 ans à la journée, pendant les vacances scolaires.</p>
+      <p>Service enfance jeunesse, bureau d'Allanche : <a href="tel:+33962370048">09 62 37 00 48</a>.</p>
+    </div>
+    <div class="panneau">
+      <h3>L'école de Marcenat</h3>
+      <p>Deux classes, une garderie matin et soir, et une cantine chaque jour de classe.</p>
+      <p><a class="lien-fleche" href="{{ '/mairie/' | relative_url }}#ecole">Horaires et contact de l'école{% include icone.html nom="fleche" %}</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="bloc" id="demarches" aria-labelledby="titre-demarches">
+  <h2 id="titre-demarches" class="titre-decore">Démarches et services publics</h2>
+  <div class="grille-asymetrique">
+    <div>
+      <p>Les espaces France Services vous accompagnent gratuitement dans vos démarches administratives du quotidien. Celui de Hautes Terres Communauté, dont fait partie Marcenat, se trouve à Allanche.</p>
+      <div class="panneau panneau--or">
+        <h3>Cartes grises : attention aux faux sites</h3>
+        <p>Les démarches pour les cartes grises se font uniquement sur le site officiel <a href="https://immatriculation.ants.gouv.fr/" rel="noopener">immatriculation.ants.gouv.fr</a>. Des sites se font passer pour le site officiel et font payer des démarches normalement gratuites.</p>
+      </div>
+      <p class="note">Toutes les démarches administratives : <a href="https://www.service-public.fr/" rel="noopener">service-public.fr</a>.</p>
+    </div>
+    <div class="pile">
+      <div class="panneau panneau--info">
+        <h3>France Services à Allanche</h3>
+        <div class="coordonnees">
+          <p>{% include icone.html nom="lieu" %}<span>Ancien hôtel Bonal<br>1 place du Cézallier<br>15160 Allanche</span></p>
+          <p>{% include icone.html nom="telephone" %}<a href="tel:+33471204843">04 71 20 48 43</a></p>
+        </div>
+      </div>
+      <div class="panneau">
+        <h3>Hautes Terres Communauté</h3>
+        <div class="coordonnees">
+          <p>{% include icone.html nom="lieu" %}<span>4 rue du Faubourg Notre-Dame<br>15300 Murat</span></p>
+          <p>{% include icone.html nom="telephone" %}<a href="tel:+33471202262">04 71 20 22 62</a></p>
+          <p>{% include icone.html nom="externe" %}<a href="https://www.hautesterres.fr" rel="noopener">hautesterres.fr</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

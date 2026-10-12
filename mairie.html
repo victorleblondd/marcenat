@@ -1,0 +1,110 @@
+---
+title: "La mairie"
+permalink: /mairie/
+chapo: "Horaires, coordonnées et services proposés aux habitants par la mairie de Marcenat."
+description: "Mairie de Marcenat : adresse, téléphone, horaires d'ouverture, permanences des élus, agence postale communale, médiathèque, salle polyvalente, école, logements et gîtes communaux."
+---
+{%- assign m = site.data.mairie -%}
+{%- assign e = site.data.elus -%}
+<section class="bloc" id="contact" aria-labelledby="titre-contact">
+  <h2 id="titre-contact" class="titre-decore">Nous contacter</h2>
+  <div class="grille-3">
+    <div class="panneau">
+      <h3>Coordonnées</h3>
+      <div class="coordonnees">
+        <p>{% include icone.html nom="lieu" %}<span>{{ m.nom }}<br>{{ m.adresse_ligne1 }}<br>{{ m.adresse_ligne2 }}</span></p>
+        <p>{% include icone.html nom="telephone" %}<a href="tel:{{ m.telephone_lien }}">{{ m.telephone }}</a></p>
+        <p>{% include icone.html nom="email" %}<a href="mailto:{{ m.email }}">{{ m.email | replace: "@", "@<wbr>" }}</a></p>
+        <p>{% include icone.html nom="outil" %}<span>Services techniques : <a href="tel:{{ m.technique_telephone_lien }}">{{ m.technique_telephone }}</a></span></p>
+      </div>
+    </div>
+    <div class="panneau">
+      <h3>Horaires d'ouverture</h3>
+      {% include horaires.html semaine_complete=true %}
+      <p class="note">Horaires du secrétariat de mairie, ouvert au public.</p>
+    </div>
+    <div class="panneau panneau--info">
+      <h3>Permanences des élus</h3>
+      <p><strong>{{ e.maire.nom }}</strong>, maire, est présent en mairie <strong>les lundis, mardis et jeudis, de 9 h 30 à 12 h</strong>, avec ou sans rendez-vous.</p>
+      <p><strong>{{ e.adjoints[0].nom }}</strong>, 1<sup>er</sup> adjoint, tient sa permanence <strong>les mercredis, de 9 h 30 à 12 h</strong>.</p>
+      <p><a class="lien-fleche" href="{{ '/conseil-municipal/' | relative_url }}">Le conseil municipal{% include icone.html nom="fleche" %}</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="bloc" id="services" aria-labelledby="titre-services">
+  <h2 id="titre-services" class="titre-decore">Les services de la commune</h2>
+  <div class="grille-2">
+    <div class="panneau" id="agence-postale">
+      <h3>Agence postale communale</h3>
+      <p>L'agence postale communale vous accueille à la maison des services, 3 rue du Florac, <strong>du lundi au jeudi, de 9 h à 12 h</strong>.</p>
+      <div class="coordonnees">
+        <p>{% include icone.html nom="telephone" %}<a href="tel:{{ m.agence_postale.telephone_lien }}">{{ m.agence_postale.telephone }}</a></p>
+      </div>
+    </div>
+    <div class="panneau" id="mediatheque">
+      <h3>Médiathèque et office de tourisme</h3>
+      <p>La médiathèque municipale accueille aussi le point d'information de Hautes Terres Tourisme. Elle est ouverte <strong>du lundi au jeudi, de 14 h à 17 h 30</strong> (depuis le 1<sup>er</sup> octobre 2026). Une connexion wifi et un ordinateur sont à votre disposition.</p>
+      <div class="coordonnees">
+        <p>{% include icone.html nom="telephone" %}<a href="tel:{{ m.mediatheque.telephone_lien }}">{{ m.mediatheque.telephone }}</a></p>
+      </div>
+    </div>
+    <div class="panneau" id="salle-polyvalente">
+      <h3>Location de la salle polyvalente</h3>
+      <p>La commune loue la salle polyvalente aux habitants de Marcenat, aux associations et aux personnes extérieures à la commune.</p>
+      <p>Conditions de réservation et de location : secrétariat de mairie, aux heures d'ouverture, au <a href="tel:{{ m.telephone_lien }}">{{ m.telephone }}</a> ou à <a href="mailto:{{ m.email }}">{{ m.email | replace: "@", "@<wbr>" }}</a>.</p>
+    </div>
+    <div class="panneau" id="ecole">
+      <h3>L'école</h3>
+      <p>L'école de Marcenat accueille les enfants dans ses deux classes, <strong>les lundis, mardis, jeudis et vendredis</strong>, de 8 h 20 à 11 h 30 et de 13 h 20 à 16 h 30.</p>
+      <ul class="liste-coches">
+        <li>Garderie le matin, de 7 h 30 à 8 h 20, et le soir, de 16 h 30 à 17 h 30.</li>
+        <li>Cantine chaque jour de classe : un repas varié et équilibré, avec un repas végétarien par semaine et des aliments bio.</li>
+      </ul>
+      <div class="coordonnees">
+        <p>{% include icone.html nom="telephone" %}<a href="tel:+33471788294">04 71 78 82 94</a></p>
+        <p>{% include icone.html nom="externe" %}<a href="https://sitesecoles15.ac-clermont.fr/0150219g/" rel="noopener">Le site de l'école</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bloc" id="logements" aria-labelledby="titre-logements">
+  <h2 id="titre-logements" class="titre-decore">Logements et terrains communaux</h2>
+  <p class="bloc-intro">La commune loue des appartements et vend des terrains constructibles. Annonces publiées par la mairie au printemps 2026 : renseignez-vous sur leur disponibilité au <a href="tel:{{ m.telephone_lien }}">{{ m.telephone }}</a>.</p>
+  <div class="grille-3">
+    <div class="panneau">
+      <p class="surtitre">Appartement · rue du Florac</p>
+      <h3>T5 de 100 m²</h3>
+      <p>Très lumineux, nombreux rangements, salle de bain, place de parking et cave individuelle. Rafraîchi par les agents techniques en 2026.</p>
+    </div>
+    <div class="panneau">
+      <p class="surtitre">Appartement n°7</p>
+      <h3>T3 de 66 m²</h3>
+      <p>Lumineux, deux chambres, salle de bain, place de parking et cave individuelle.</p>
+    </div>
+    <div class="panneau">
+      <p class="surtitre">Appartement n°9 · Polygone</p>
+      <h3>T2 de 43 m²</h3>
+      <p>Lumineux, salle de bain, place de parking et cave individuelle.</p>
+    </div>
+  </div>
+  <div class="panneau panneau--or bloc-suite">
+    <h3>Terrains constructibles</h3>
+    <p>Deux terrains constructibles, avec une belle vue : <strong>1 197 m²</strong> et <strong>756 m²</strong>. Renseignements en mairie.</p>
+  </div>
+</section>
+
+<section class="bloc" id="gites" aria-labelledby="titre-gites">
+  <h2 id="titre-gites" class="titre-decore">Gîtes communaux</h2>
+  <div class="grille-asymetrique">
+    <div>
+      <p>La commune gère trois gîtes d'étape, dont le gîte de la Poste et le gîte équestre, et trois gîtes meublés loués à la semaine, au cœur du village.</p>
+      <p><a class="lien-fleche" href="{{ '/decouvrir/' | relative_url }}#hebergements">Les gîtes et leurs tarifs{% include icone.html nom="fleche" %}</a></p>
+    </div>
+    <div class="panneau panneau--info">
+      <h3>Réservations</h3>
+      <p>Office de tourisme, au <a href="tel:{{ m.mediatheque.telephone_lien }}"><strong>{{ m.mediatheque.telephone }}</strong></a>, du lundi au jeudi, de 14 h à 17 h 30.</p>
+    </div>
+  </div>
+</section>
